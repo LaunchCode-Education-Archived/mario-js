@@ -1,6 +1,11 @@
 
-printPyramid(5);
-
+/* Add Event Listener to the button */
+ const button = document.querySelector("button");
+ const input = document.querySelector("input");
+ button.addEventListener("click", function () {
+ 	if(input.value)
+ 		printPyramid(input.value);
+ }, false);
 
 /*
  * printPyramid
@@ -14,6 +19,7 @@ printPyramid(5);
  *      ######
  */
 function printPyramid(height) {
+	console.log(height);
     console.log("Uh oh... the pyramid is under construction.");
     console.log("Check back soon, our developers are hard at work as we speak!");
 
